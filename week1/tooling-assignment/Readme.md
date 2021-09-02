@@ -39,6 +39,7 @@ git config --global user.email "<youremail@example.com>"
 ```
 
 ## Install IDE editor
+![image](https://user-images.githubusercontent.com/60056749/131779736-679a0e60-891d-4fec-b635-38bf56676b20.png)
 
 After installing an IDE editor of your choice, pick one of the listed or you can use another one, but it needs to have native Git support built into the editor.  Take a screenshot of output of the help > about button in the application.  You can install all or any of these via the package managers Chocolatey or Winget.
 
