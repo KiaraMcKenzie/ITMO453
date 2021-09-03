@@ -24,18 +24,22 @@ If you do not already have VirtualBox 6.x installed, use the package manager to 
 ## Install Vagrant
 
 Using a package manager, install the latest version of [Vagrant](https://vagrantup.com "Vagrant download site").  If you have a version 2.2.x you will be ok.  Note, if on Linux, do not use the built in package manager as these versions of Vagrant and Packer are too old and unmaintained.  Place a screenshot of the output of the command: ```vagrant --version```
+![image](https://user-images.githubusercontent.com/60056749/131931950-d13016bf-7614-47bf-b013-5bbda96a3026.png)
 
 Complete the Vagrant tutorial located at [https://learn.hashicorp.com/collections/vagrant/getting-started](https://learn.hashicorp.com/collections/vagrant/getting-started "Vagrant tutorial"), you can skip the INSTALL section as we are installing using a package manager and skip the SHARE ENVIRONMENT section.  
 
 After completing this tutorial take a screenshot of the output of the command ```vagrant box list```
+![image](https://user-images.githubusercontent.com/60056749/131932093-012ffb8c-3d97-4f9a-b00a-10b3701e2e43.png)
 
 ## Install Packer.io
 
 Using a package manager, install the latest version of [Packer](https://packer.io "Packer install site").  If you have a version > 1.6.x you will be ok. Note, if on Linux, do not use the built in package manager as these versions of Vagrant and Packer are too old and unmaintained.  Place a screenshot of the output of the command: ```packer --version```
+![image](https://user-images.githubusercontent.com/60056749/131932126-9b692bc1-8d5d-4e34-ad9f-43373dc57e1d.png)
 
 I have a series of samples that I use from Packer to build images.  Clone this sample repo to your computer: ```git clone https://github.com/illinoistech-itm/jhajek```.  If you have previously clone this repo - `cd` into your local repository and issue this command: `git pull`.  You only need to clone once, then to update issue the `git pull` command.  Navigate to the ```packer-example-code``` directory from the command line.  Issue the command: ```packer build .```
 
 Take a screenshot of the output of the ```build``` directory showing the ```*.box``` file.
+![image](https://user-images.githubusercontent.com/60056749/131933027-999ee7ae-bde1-4adc-8fda-bf5e49b312c2.png)
 
 ## Initialize the Built Artifact
 
@@ -54,3 +58,4 @@ In the ```build``` directory, create a directory named **ubuntu-focal-2001-vanil
 To start the VM lets type the same command: ```vagrant up```.  Upon the vm starting succesfully, let us type the commmand: ```vagrant ssh``` to connect to the instance we built via SSH.
 
 ***Deliverable*** Take a screenshot of the your VM right after you have completed the `vagrant ssh` command.
+![image](https://user-images.githubusercontent.com/60056749/131931838-da8091a2-a577-4a33-9d13-b97d9f691e91.png)
